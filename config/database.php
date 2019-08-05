@@ -74,12 +74,12 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env( 'postgres://amcvrspbwvubqn:786f23f58e3810042c2b0158f1ede989c24831d6f78db2560870287fd2b53dec@ec2-174-129-227-128.compute-1.amazonaws.com:5432/dt4otgorh43uf'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            //'url' => env( 'postgres://amcvrspbwvubqn:786f23f58e3810042c2b0158f1ede989c24831d6f78db2560870287fd2b53dec@ec2-174-129-227-128.compute-1.amazonaws.com:5432/dt4otgorh43uf'),
+            'host' => $host,
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
