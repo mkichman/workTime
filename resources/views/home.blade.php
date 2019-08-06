@@ -11,6 +11,9 @@
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
+
+
+                            user profile ssjdjdfjksdlk;sjksfdlkfjk
                         </div>
                     @endif
 
