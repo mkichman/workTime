@@ -13,10 +13,10 @@
                             {{ session('status') }}
 
 
-                            user profile ssjdjdfjksdlk;sjksfdlkfjk
+
                         </div>
                     @endif
-
+                        user profile ssjdjdfjksdlk;sjksfdlkfjk
                     You are logged in!
                 </div>
             </div>
