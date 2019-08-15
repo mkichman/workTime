@@ -20,4 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index');
 Route::get('/timer', 'TimerController@index');
+Route::resource('schedule', 'ScheduleController');
+Route::get('schedule/create', 'ScheduleController@create');
+Route::get('schedule', 'ScheduleController@index')->name('calendar');
 
