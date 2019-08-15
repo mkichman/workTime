@@ -16,9 +16,12 @@
 
                         </div>
                     @endif
-                        user profile ssjdjdfjksdlk;sjksfdlkfjk
                     You are logged in!
-                    bbhjjhhgjjhghgj
+
+
+
+
+                    <a href="timer">Go to timer</a>
                 </div>
             </div>
         </div>
