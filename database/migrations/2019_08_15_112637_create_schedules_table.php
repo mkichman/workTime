@@ -18,7 +18,8 @@ class CreateSchedulesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
-            $table->date('task_date');
+            $table->date('startDate');
+            $table->date('endDate');
             $table->timestamps();
         });
     }

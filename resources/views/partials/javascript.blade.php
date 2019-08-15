@@ -17,7 +17,8 @@ $(document).ready(function() {
                         @foreach($schedule as $task)
                     {
                         title : '{{ $task->name }}',
-                        start : '{{ $task->task_date }}',
+                        start : '{{ $task->startDate }}',
+                        end : '{{ $task->endDate }}',
                         url : '{{ route('schedule.edit', $task->id) }}'
                     },
                     @endforeach

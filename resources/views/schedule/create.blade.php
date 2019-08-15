@@ -23,8 +23,12 @@
                             {{ Form::textArea('description', '', ['class' => 'form-control']) }}
                         </div>
                         <div class="form-group">
-                            {{ Form::label('datePicker', 'Pick a date') }}
-                            {{   Form::date('task_date', \Carbon\Carbon::now())}}
+                            {{ Form::label('datePicker', 'Start date') }}
+                            {{   Form::date('startDate', \Carbon\Carbon::now())}}
+                        </div>
+                        <div class="form-group">
+                            {{ Form::label('datePicker', 'End date') }}
+                            {{   Form::date('endDate', \Carbon\Carbon::now())}}
                         </div>
                         {{Form::submit('Add task', ['class' => 'btn btn-primary'])}}
                         <a href="{{route('calendar')}}" class="float-right">Back to calendar</a>

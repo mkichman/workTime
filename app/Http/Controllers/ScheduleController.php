@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Helpers\CalendarHelper;
 use App\Schedule;
+
 use Illuminate\Http\Request;
 
 class ScheduleController extends Controller
@@ -36,8 +38,9 @@ class ScheduleController extends Controller
      */
     public function store(Request $request)
     {
+        //TODO validate request if end date is not earlier than start date
         Schedule::create($request->all());
-        return redirect()->route('schedule.index');
+        return redirect()->route('calendar');
     }
 
     /**
@@ -59,7 +62,7 @@ class ScheduleController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('schedule.edit', compact('id'));
     }
 
     /**
