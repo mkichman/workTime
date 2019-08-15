@@ -2,12 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$url = parse_url(getenv("DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
 
 return [
 
@@ -24,7 +19,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,11 +50,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => $host,
+            'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
+            'database' => env('DB_DATABASE', ''),
+            'username' => env('DB_USERNAME', 'localhost'),
+            'password' => env('DB_PASSWORD', 'localhost'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -75,11 +70,11 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             //'url' => env( 'postgres://amcvrspbwvubqn:786f23f58e3810042c2b0158f1ede989c24831d6f78db2560870287fd2b53dec@ec2-174-129-227-128.compute-1.amazonaws.com:5432/dt4otgorh43uf'),
-            'host' => $host,
-            'port' => env('DB_PORT', '5432'),
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
+//            'host' => $host,
+//            'port' => env('DB_PORT', '5432'),
+//            'database' => $database,
+//            'username' => $username,
+//            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
