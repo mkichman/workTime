@@ -21,6 +21,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index');
 Route::get('/timer', 'TimerController@index');
 Route::resource('schedule', 'ScheduleController');
-Route::get('schedule/create', 'ScheduleController@create');
+Route::get('schedule/create', 'S]cheduleController@create');
 Route::get('schedule', 'ScheduleController@index')->name('calendar');
+//Route::post('schedule.update', 'ScheduleController@update');
+
+Route::get('schedule/update', 'ScheduleController@create');
+Route::patch('schedule/update/{schedule}', [
+    'as' => 'schedule/update/',
+    'uses' => 'ScheduleController@update'
+]);
 

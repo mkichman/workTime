@@ -1,3 +1,6 @@
+
+
+
 @include('layouts.app')
 
 
@@ -12,29 +15,31 @@
                 </div>
                 <div class="card-body">
 
-                    {{ $id }}
 
 
+{{--                    {{ Form::model($task,['method' => 'POST', 'action' => 'ScheduleController@update', 'id=' . $task->id] ) }}--}}
+                    {{ Form::model($task, ['route' => ['schedule/update/', $task->id]] ) }}
 
-                    {{ Form::open(['route' => 'schedule.store']) }}
+                    {{ method_field('PATCH') }}
+
 
                     <div class="form-group">
                         {{ Form::label('taskName', 'Task name') }}
-                        {{ Form::text('name','', ['class' => 'form-control', 'id' => 'taskName']) }}
+                        {{ Form::text('name',$task->name, ['class' => 'form-control', 'id' => 'taskName']) }}
                     </div>
                     <div class="form-group">
                         {{ Form::label('taskDescription', 'Task description') }}
-                        {{ Form::textArea('description', '', ['class' => 'form-control']) }}
+                        {{ Form::textArea('description', $task->description, ['class' => 'form-control']) }}
                     </div>
                     <div class="form-group">
                         {{ Form::label('datePicker', 'Start date') }}
-                        {{   Form::date('startDate', \Carbon\Carbon::now())}}
+                        {{   Form::date('startDate',\Carbon\Carbon::now())}}
                     </div>
                     <div class="form-group">
                         {{ Form::label('datePicker', 'End date') }}
                         {{   Form::date('endDate', \Carbon\Carbon::now())}}
                     </div>
-                    {{Form::submit('Add task', ['class' => 'btn btn-primary'])}}
+                    {{Form::submit('Edit task', ['class' => 'btn btn-primary'])}}
                     <a href="{{route('calendar')}}" class="float-right">Back to calendar</a>
                     {{ Form::close() }}
 

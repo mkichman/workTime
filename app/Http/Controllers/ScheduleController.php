@@ -62,7 +62,13 @@ class ScheduleController extends Controller
      */
     public function edit($id)
     {
-        return view('schedule.edit', compact('id'));
+        //$schedule = new Schedule();
+
+        $task = Schedule::where('id', '=', $id)->firstOrFail();
+
+
+
+        return view('schedule.edit', compact('task'));
     }
 
     /**
@@ -74,7 +80,21 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Schedule::findOrfail($id);
+
+
+//        $post->update($request->all());
+////        Schedule::where("id", $id)->update($request->all());
+        $post->name = $request->name;
+        $post->description = $request->description;
+        $post->startDate = $request->startDate;
+        $post->endDate = $request->endDate;
+
+        $post->save();
+
+
+        return redirect()->route('calendar');
+
     }
 
     /**
