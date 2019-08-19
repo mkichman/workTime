@@ -80,17 +80,14 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Schedule::findOrfail($id);
+        $task = Schedule::findOrfail($id);
 
+        $task->name = $request->name;
+        $task->description = $request->description;
+        $task->startDate = $request->startDate;
+        $task->endDate = $request->endDate;
 
-//        $post->update($request->all());
-////        Schedule::where("id", $id)->update($request->all());
-        $post->name = $request->name;
-        $post->description = $request->description;
-        $post->startDate = $request->startDate;
-        $post->endDate = $request->endDate;
-
-        $post->save();
+        $task->save();
 
 
         return redirect()->route('calendar');
@@ -105,6 +102,9 @@ class ScheduleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $task = Schedule::findOrfail($id);
+
+        $task->delete();
+        return redirect()->route('calendar');
     }
 }
