@@ -9,7 +9,9 @@
                     <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
-                       There will be timer
+                        <a href="timer/start" class="btn btn-success">Start</a>
+                        <a href="#" class="btn btn-warning">Pause</a>
+                        <a href="#" class="btn btn-danger">Stop</a>
                     </div>
                 </div>
             </div>

@@ -34,5 +34,7 @@ Route::get('schedule/deleteTask/{id}', [
     'as' => 'deleteTask',
     'uses' => 'ScheduleController@destroy'
 ]);
+Route::get('timer/start', 'TimerController@start');
+
 
 
