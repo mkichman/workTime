@@ -7,7 +7,6 @@
 
 <script>
 
-console.log("i work");
 
 $(document).ready(function() {
             // page is now ready, initialize the calendar...
@@ -19,11 +18,17 @@ $(document).ready(function() {
                         title : '{{ $task->name }}',
                         start : '{{ $task->startDate }}',
                         end : '{{ $task->endDate }}',
+                        businessHours : true,
                         url : '{{ route('schedule.edit', $task->id) }}'
                     },
                     @endforeach
                 ]
             })
+
+
+
+
+
         });
 
 </script>

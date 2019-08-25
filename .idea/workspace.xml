@@ -2,15 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcd0444c-b224-4342-9e51-41dab4e09ebf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Helpers/CalendarHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/schedule/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Schedule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Schedule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_15_112637_create_schedules_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_15_112637_create_schedules_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/bootstrap/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales-all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales-all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-dz.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-dz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-kw.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-kw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-ly.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-ly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-ma.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-ma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-sa.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-sa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar-tn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar-tn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/en-nz.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/en-nz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/es-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/fr-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/fr-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/kk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/lb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/nn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sr-cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sr-cyrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/locales/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/locales/zh-tw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/daygrid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/daygrid/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/google-calendar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/google-calendar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/interaction/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/interaction/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/list/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/list/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/luxon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/luxon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment-timezone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment-timezone/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/moment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/moment/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/rrule/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/rrule/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/fullcalendar/timegrid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/fullcalendar/timegrid/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/javascript.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/javascript.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/schedule/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/schedule/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/schedule/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,19 +178,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/schedule/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="13" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="493">
+              <caret line="29" column="11" selection-start-line="24" selection-start-column="16" selection-end-line="29" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/schedule/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="34" />
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/timer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -47,65 +216,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/javascript.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="510">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+            <state relative-caret-position="187">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/schedule/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-              <folding>
-                <element signature="e#40#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Schedule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Helpers/CalendarHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="514">
+              <caret line="43" column="97" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -113,8 +252,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="953">
+            <state relative-caret-position="2992">
               <caret line="176" column="50" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="e#40#76#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,26 +296,26 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TimerController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/timer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/body.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Schedule.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_15_112637_create_schedules_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/javascript.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/schedule/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/schedule/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/CalendarServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Helpers/CalendarHelper.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Schedule.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/schedule/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/javascript.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/schedule/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -255,7 +406,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -368,7 +519,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wmTime\resources\views\layouts" />
+      <recent name="C:\xampp\htdocs\wmTime\resources\views\partials" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -495,16 +653,38 @@
       <option name="project" value="LOCAL" />
       <updated>1565889395732</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit task part 1">
+      <created>1565898078154</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565898078154</updated>
+    </task>
+    <task id="LOCAL-00015" summary="edit task">
+      <created>1566153345140</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566153345141</updated>
+    </task>
+    <task id="LOCAL-00016" summary="delete task">
+      <created>1566232197003</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1566232197003</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27873000" />
+    <option name="totallyTimeSpent" value="42904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -520,7 +700,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297546" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -565,7 +745,10 @@
     <MESSAGE value="mysql config" />
     <MESSAGE value="timer config" />
     <MESSAGE value="adding task and presenting calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding task and presenting calendar" />
+    <MESSAGE value="edit task part 1" />
+    <MESSAGE value="edit task" />
+    <MESSAGE value="delete task" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete task" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/User.php">
@@ -606,13 +789,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/console.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,31 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TimerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/timer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="4" selection-start-column="3" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="11" selection-start-line="24" selection-start-column="16" selection-end-line="29" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -691,24 +846,10 @@
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="115" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_15_112637_create_schedules_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -729,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="953">
-          <caret line="176" column="50" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Helpers/CalendarHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -743,55 +877,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Schedule.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="-7191">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/schedule/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Schedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TimerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/schedule/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/fullcalendar/core/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#4#10#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/javascript.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/schedule/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="43" column="97" selection-start-line="43" selection-start-column="97" selection-end-line="43" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="11" selection-start-line="24" selection-start-column="16" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="176" column="50" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/timer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        <state relative-caret-position="1411">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#40#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/schedule/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/schedule/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="13" selection-end-line="34" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/schedule/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="238">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
     </entry>
