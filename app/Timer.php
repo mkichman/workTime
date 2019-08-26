@@ -12,8 +12,4 @@ class Timer extends Model
     protected $fillable = ['startDate', 'startTime', 'endTime', 'endDate'] ;
 
 
-    public function start()
-    {
-
-    }
 }
