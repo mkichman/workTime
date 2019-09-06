@@ -6,13 +6,18 @@ namespace App\Http\Controllers;
 
 use App\Http\Timer;
 use App\Http\Helpers\TimerHelper;
+use Illuminate\Http\Request;
 
 
 class TimerController extends Controller
 {
     public function index()
     {
-        return view('timer');
+        $timer = Timer::select('startTime', 'endTime', 'startDate', 'endDate')->get();
+        $data = json_decode($timer, TRUE);
+
+
+        return view('timer')->with('data', $data);
     }
 
     public function start()
@@ -30,6 +35,8 @@ class TimerController extends Controller
            $timer->save();
 
            return view('timer');
+       } else {
+           false;
        }
     }
 
@@ -59,13 +66,30 @@ class TimerController extends Controller
     {
         $timer = Timer::where('endDate', NULL)->first();
 
-
         if($timer !== NULL)
         {
-            echo 'stop the timer first';
+            //echo 'stop the timer first';
             return false;
             // TODO
         }
        return true;
     }
+
+  public function pause(Request $request)
+  {
+      $sth = $request->all();
+
+      $timer = Timer::select('break')->where('endDate', NULL)->first();
+
+      foreach($sth as $key => $value)
+      {
+          if($value > 59)
+          {
+              die('too long break');
+              // todo
+          }
+          Timer::where('endDate', NULL)->update(['break' => $timer->break + $value]);
+      }
+
+  }
 }

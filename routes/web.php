@@ -35,7 +35,8 @@ Route::get('schedule/deleteTask/{id}', [
     'uses' => 'ScheduleController@destroy'
 ]);
 Route::post('timer/start', 'TimerController@start')->name('startTimer');
-Route::get('/stop', 'TimerController@stop')->name('stopTimer');
+Route::post('timer/stop', 'TimerController@stop')->name('stopTimer');
+Route::post('timer/pause', 'TimerController@pause')->name('pauseTimer');
 
 
 
