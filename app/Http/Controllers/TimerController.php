@@ -13,11 +13,17 @@ class TimerController extends Controller
 {
     public function index()
     {
+
+        return view('timer');
+    }
+
+    public function previousLogs()
+    {
         $timer = Timer::select('startTime', 'endTime', 'startDate', 'endDate')->get();
         $data = json_decode($timer, TRUE);
 
 
-        return view('timer')->with('data', $data);
+        return $data;
     }
 
     public function start()
@@ -77,11 +83,11 @@ class TimerController extends Controller
 
   public function pause(Request $request)
   {
-      $sth = $request->all();
+      $postData = $request->all();
 
       $timer = Timer::select('break')->where('endDate', NULL)->first();
 
-      foreach($sth as $key => $value)
+      foreach($postData as $key => $value)
       {
           if($value > 59)
           {
