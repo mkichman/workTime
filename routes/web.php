@@ -19,7 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->middleware('auth');
-Route::get('/timer', 'TimerController@index')->middleware('auth');
+//Route::get('/timer', 'TimerController@index')->middleware('auth');
+
+Route::get('/timer', 'TimerController@index')->middleware('check_user_role:' . \App\Role\UserRole::ROLE_ADMIN);
+
+
 Route::resource('schedule', 'ScheduleController')->middleware('auth');
 Route::get('schedule/create', 'ScheduleController@create')->middleware('auth');
 Route::get('schedule', 'ScheduleController@index')->name('calendar')->middleware('auth');
@@ -41,6 +45,7 @@ Route::get('timer/stop', 'TimerController@index')->middleware('auth');
 Route::post('timer/pause', 'TimerController@pause')->name('pauseTimer')->middleware('auth');
 Route::get('timer/pause', 'TimerController@index')->middleware('auth');
 Route::get('timer/logs', 'TimerController@previousLogs')->middleware('auth');
+Route::get('/userProfile', 'UserController@index')->name('userProfile')->middleware('auth');
 
 
 

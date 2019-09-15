@@ -20,10 +20,10 @@ class TimerController extends Controller
     public function previousLogs()
     {
         $timer = Timer::select('startTime', 'endTime', 'startDate', 'endDate')->get();
-        $data = json_decode($timer, TRUE);
+//        $data = json_decode($timer, TRUE);
 
 
-        return $data;
+        return view('userProfile')->with($timer);
     }
 
     public function start()
