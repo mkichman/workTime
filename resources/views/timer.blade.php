@@ -1,34 +1,25 @@
 @include('layouts.app')
 
-{{--@section('content')--}}
-
-
-{{--{{ $data }}--}}
-
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row ">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Dashboard</div>
 
                 <div class="card-body text-center">
-                    <a href="#" class="btn btn-success timer-start">Start</a>
-                    <a href="#" class="btn btn-warning timer-pause">Pause</a>
-                    <a href="#" class="btn btn-danger timer-stop">Stop</a>
-
-
+                    <a href="#" class="btn btn-success timer-start btn-lg">Start</a>
+                    <a href="#" class="btn btn-warning timer-pause btn-lg">Pause</a>
+                    <a href="#" class="btn btn-danger timer-stop btn-lg">Stop</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
+        </div>
+            <div class="card col-md-8">
 
-                </div>
                 <div class="card-body">
 
 
                     <div class="alert alert-info text-center break">
-                        <a href="#" class="btn btn-primary timer-restart">Start working</a>
+                        <a href="#" class="btn btn-primary timer-restart btn-lg">Start working</a>
                         <hr>
                         <p>You are currently on break for:</p>
 
@@ -39,17 +30,17 @@
 
                     <div class="alert alert-danger text-center stopConfirm">
                         <p>Confirm stopping timer</p>
-                        <button class="btn btn-danger stopBtn">Confirm</button>
+                        <button class="btn btn-danger stopBtn btn-lg">Confirm</button>
                     </div>
 
                     <div class="alert alert-warning text-center pauseConfirm">
                         <p>Confirm pausing timer</p>
-                        <button class="btn btn-warning pauseBtn">Confirm</button>
+                        <button class="btn btn-warning pauseBtn btn-lg">Confirm</button>
                     </div>
 
                     <div class="alert alert-info text-center restartConfirm">
                         <p>Confirm restarting timer</p>
-                        <button class="btn btn-info restartBtn">Confirm</button>
+                        <button class="btn btn-info restartBtn btn-lg">Confirm</button>
                     </div>
 
 
@@ -59,43 +50,12 @@
 
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">
-                    Previous logs
-                </div>
-                <div class="card-body">
-                    <table id="table_id" class="display">
-                        <thead>
-                        <tr>
-                            <th>Start time</th>
-                            <th>End time</th>
-                            <th>Start date</th>
-                            <th>End date</th>
-                        </tr>
-                        </thead>
-                        <tbody class="logsTable">
-                        <tr></tr>
-                        {{--                                                    @foreach($data as $row => $key)--}}
-                        {{--                                                        <tr>--}}
-                        {{--                                                            @foreach($key as $sth => $ss)--}}
-                        {{--                                                                <td> {{$ss}}</td>--}}
-                        {{--                                                            @endforeach--}}
-                        {{--                                                        </tr>--}}
-                        {{--                                                    @endforeach--}}
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
 
-        </div>
     </div>
 </div>
 
-{{--@endsection--}}
 
 
 <script>

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Timer;
-use Illuminate\Support\Facades\View;
 
 class UserController extends Controller
 {
@@ -16,8 +15,5 @@ class UserController extends Controller
         $data = json_decode($data, TRUE);
 
         return view('userProfile', compact('data'));
-//        return View::make('userProfile',['data' => $data]);
-
-//        return view('userProfile')->with('data', $data);
     }
 }

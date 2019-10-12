@@ -18,17 +18,23 @@
                         </tr>
                         </thead>
                         <tbody class="logsTable">
-                        <tr></tr>
                             @foreach($data as $row => $key)
                                 <tr>
                                     @foreach($key as $sth => $ss)
-{{--                                        {{ $ss }}--}}
                                         <td> {{$ss}}</td>
                                     @endforeach
                                 </tr>
                             @endforeach
 
                         </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>Start time</th>
+                            <th>End time</th>
+                            <th>Start date</th>
+                            <th>End date</th>
+                        </tr>
+                        </tfoot>
                     </table>
 
                 </div>
@@ -41,6 +47,8 @@
 
 <script>
     $(document).ready( function () {
-        $('#table_id').DataTable();
-    } );
+        $('#table_id').DataTable({}
+        );
+    });
+
 </script>
