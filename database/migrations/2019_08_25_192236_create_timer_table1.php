@@ -15,12 +15,14 @@ class CreateTimerTable1 extends Migration
     {
         Schema::create('timers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('userId')->nullable(false);
             $table->timestamps();
             $table->time('startTime');
             $table->time('endTime');
             $table->date('startDate');
             $table->date('endDate');
             $table->integer('break');
+            $table->integer('workTime')->nullable(false);
         });
     }
 
@@ -31,6 +33,6 @@ class CreateTimerTable1 extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('timer_table1');
+        Schema::dropIfExists('timers');
     }
 }
