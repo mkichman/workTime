@@ -6,6 +6,8 @@ use App\Http\Helpers\CalendarHelper;
 use App\Schedule;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ScheduleController extends Controller
 {
@@ -16,7 +18,25 @@ class ScheduleController extends Controller
      */
     public function index()
     {
-        $schedule = Schedule::all();
+        $user = Auth::user();
+
+        $schedule = DB::table('schedules')
+                    ->where('userId', '=', $user->id)
+                    ->get()
+                    ->toArray();
+
+        $timers = DB::table('timers')
+                    ->where('userId', '=', $user->id)
+                    ->select(['startDate', 'endDate', 'workTime', 'break as description', 'id'])
+                    ->get()
+                    ->toArray();
+
+//        $timers = $timers->toArray();
+        $schedule = array_merge($timers, $schedule);
+
+//        dd($schedule);
+
+//        $schedule = Schedule::all();
         return view('schedule.index', compact('schedule'));
     }
 
@@ -39,7 +59,18 @@ class ScheduleController extends Controller
     public function store(Request $request)
     {
         //TODO validate request if end date is not earlier than start date
-        Schedule::create($request->all());
+        $user = Auth::user();
+
+        $scheduleTable = DB::table('schedules');
+
+        $scheduleTable->insert([
+            'userId'        => $user->id,
+            'name'          => $request->name,
+            'description'   => $request->description,
+            'startDate'     => $request->startDate,
+            'endDate'       => $request->endDate
+        ]);
+
         return redirect()->route('calendar');
     }
 
@@ -66,8 +97,6 @@ class ScheduleController extends Controller
 
         $task = Schedule::where('id', '=', $id)->firstOrFail();
 
-
-
         return view('schedule.edit', compact('task'));
     }
 
@@ -89,9 +118,7 @@ class ScheduleController extends Controller
 
         $task->save();
 
-
         return redirect()->route('calendar');
-
     }
 
     /**
@@ -106,5 +133,11 @@ class ScheduleController extends Controller
 
         $task->delete();
         return redirect()->route('calendar');
+    }
+
+    public function editUnavailable()
+    {
+        //todo
+        die('this is view which says edit is unavailable for this event');
     }
 }

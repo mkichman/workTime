@@ -38,6 +38,7 @@ Route::get('schedule/deleteTask/{id}', [
     'as' => 'deleteTask',
     'uses' => 'ScheduleController@destroy'
 ])->middleware('auth');
+Route::get('/editUnavailable', 'ScheduleController@editUnavailable');
 Route::post('timer/start', 'TimerController@start')->name('startTimer')->middleware('auth');
 Route::get('timer/start', 'TimerController@index')->middleware('auth');
 Route::post('timer/stop', 'TimerController@stop')->name('stopTimer')->middleware('auth');

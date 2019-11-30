@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Schedule extends Model
 {
-    protected $fillable = ['name', 'description', 'startDate', 'endDate'] ;
+    protected $fillable = ['name', 'description', 'startDate', 'endDate', 'userId'] ;
 
     public function find($id)
     {

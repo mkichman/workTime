@@ -40,6 +40,7 @@ class TimerController extends Controller
            $timer->startTime = date('H:i:s');
            $timer->startDate = date('Y/m/d');
            $timer->userId    = $user->id;
+           $timer->workTime  = 0;
 
            $timer->save();
 

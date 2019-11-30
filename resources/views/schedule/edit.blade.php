@@ -40,8 +40,8 @@
                         {{   Form::date('endDate', \Carbon\Carbon::now())}}
                     </div>
                     {{Form::submit('Edit task', ['class' => 'btn btn-primary'])}}
-                    <a href="{{route('calendar')}}" class="float-right">Back to calendar</a>
-                    <a href="{{route('deleteTask', $task->id)}}" class="float-right">Delete task </a>
+                    <a href="{{route('calendar')}}" class="float-right">  Back to calendar</a>
+                    <a href="{{route('deleteTask', $task->id)}}" class="float-right">Delete task |  </a>
                     {{ Form::close() }}
 
                 </div>

@@ -15,11 +15,11 @@ $(document).ready(function() {
                 events : [
                         @foreach($schedule as $task)
                     {
-                        title : '{{ $task->name }}',
+                        title : '{{ isset($task->name) ? $task->name : "Working hours: " . $task->workTime }}',
                         start : '{{ $task->startDate }}',
                         end : '{{ $task->endDate }}',
                         businessHours : true,
-                        url : '{{ route('schedule.edit', $task->id) }}'
+                        url : '{{ isset($task->name) ? route('schedule.edit', $task->id) : url('/editUnavailable') }}'
                     },
                     @endforeach
                 ]
