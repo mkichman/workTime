@@ -11,10 +11,11 @@
                     <table id="table_id" class="display">
                         <thead>
                         <tr>
-                            <th>Start time</th>
-                            <th>End time</th>
-                            <th>Start date</th>
-                            <th>End date</th>
+                            <th>Started At</th>
+                            <th>Ended At</th>
+                            <th>Date</th>
+                            <th>Break Time</th>
+                            <th>Work Time</th>
                         </tr>
                         </thead>
                         <tbody class="logsTable">
@@ -29,10 +30,11 @@
                         </tbody>
                         <tfoot>
                         <tr>
-                            <th>Start time</th>
-                            <th>End time</th>
-                            <th>Start date</th>
-                            <th>End date</th>
+                            <th>Started At</th>
+                            <th>Ended At</th>
+                            <th>Date</th>
+                            <th>Break Time</th>
+                            <th>Work Time</th>
                         </tr>
                         </tfoot>
                     </table>
