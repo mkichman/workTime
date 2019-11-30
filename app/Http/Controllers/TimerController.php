@@ -6,8 +6,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Timer;
 use App\Http\Helpers\TimerHelper;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class TimerController extends Controller
 {
@@ -26,51 +28,78 @@ class TimerController extends Controller
         return view('userProfile')->with($timer);
     }
 
-    public function start()
+    public function start(Request $request)
     {
         date_default_timezone_set('Europe/Warsaw');
 
-        $currentDate = date('Y/m/d');
+        $user = Auth::user();
 
-       if($this->isValid($currentDate))
+       if($this->isValid($user))
        {
            $timer = new Timer();
            $timer->startTime = date('H:i:s');
            $timer->startDate = date('Y/m/d');
+           $timer->userId    = $user->id;
 
            $timer->save();
 
            return view('timer');
        } else {
-           false;
+           return false;
        }
     }
 
     public function stop()
     {
-
         date_default_timezone_set('Europe/Warsaw');
+        $user = Auth::user();
 
-        $timer = Timer::where('endDate', NULL)->first();
+//        $timer = Timer::where('endDate', NULL)->first();
+
+        $tableTimers = DB::table('timers');
+
+        $timer = $tableTimers
+                ->where('userId', '=', $user->id)
+                ->whereNull('endDate')
+                ->first();
 
         if($timer === NULL)
         {
-            echo 'nope';
-            die();
+            die('start the timer first');
             //TODO stopping timer when no timer is started
         }
 
-        $timer->endTime = date('H:i:s');
-        $timer->endDate = date('Y/m/d');
+        $start = Carbon::createFromFormat('H:i:s', $timer->startTime);
+        $end = Carbon::createFromFormat('H:i:s', date('H:i:s'));
 
-        $timer->save();
+        $workTime = $start->diff($end);
+
+        $tableTimers
+            ->where('userId', '=', $user->id)
+            ->update([
+            'endTime' => date('H:i:s'),
+            'endDate' => date('Y/m/d'),
+            'workTime' => $workTime->i
+        ]);
+
+//        $timer->endTime = date('H:i:s');
+//        $timer->endDate = date('Y/m/d');
+//
+//        $timer->save();
 
         return view('timer');
     }
 
-    public function isValid($currentDate)
+    public function isValid($user)
     {
-        $timer = Timer::where('endDate', NULL)->first();
+        $tableTimers = DB::table('timers');
+
+        $timer = $tableTimers
+            ->where('userId', '=', $user->id)
+            ->whereNull('endDate')
+            ->first();
+
+//        $timer = Timer::where('endDate', NULL)->first();
 
         if($timer !== NULL)
         {
