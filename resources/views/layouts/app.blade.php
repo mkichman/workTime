@@ -23,6 +23,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/todo.css') }}" rel="stylesheet">
 
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css'/>
@@ -48,6 +49,9 @@
             </a>
             <a class="navbar-brand" href="{{ url('/schedule') }}">
                 Calendar
+            </a>
+            <a class="navbar-brand" href="{{ url('/todo') }}">
+                To Do
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"

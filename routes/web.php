@@ -46,6 +46,11 @@ Route::post('timer/pause', 'TimerController@pause')->name('pauseTimer')->middlew
 Route::get('timer/pause', 'TimerController@index')->middleware('auth');
 Route::get('timer/logs', 'TimerController@previousLogs')->middleware('auth');
 Route::get('/userProfile', 'UserController@index')->name('userProfile')->middleware('auth');
+Route::get('/todo', 'TodoListController@index')->name('todo')->middleware('auth');
+Route::post('todo/add', 'TodoListController@create')->name('todoAdd')->middleware('auth');
+//Route::get('todo/done', 'TodoListController@markAsDone')->name('done')->middleware('auth');
+Route::post('todo/done', 'TodoListController@markAsDone')->name('setDone')->middleware('auth');
+Route::post('todo/delete', 'TodoListController@delete')->middleware('auth');
 
 
 

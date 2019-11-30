@@ -1,0 +1,12 @@
+.done {
+    text-decoration: line-through;
+}
+.task {
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+}
+.list-group-item {
+    border: none !important;
+}
