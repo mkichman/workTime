@@ -22,13 +22,18 @@
                 @endforeach
 
 
-                <div class="form-group col-md-12">
+
                     {{ Form::open(['route' => 'todoAdd']) }}
-                    {{ Form::text('description','', ['class' => 'col-md-12 form-control', 'id' => 'taskName']) }}
+                    <div class="input-group">
+                    {{Form::text('name', '', ['class' => 'form-control col-md-2', 'placeholder' => 'Short name'])}}
+
+                    {{ Form::text('description','', ['class' => 'form-control col-md-10', 'id' => 'taskName', 'placeholder' => 'Description']) }}
+                    </div>
                     <br/>
                     {{Form::submit('Add', ['class' => 'btn btn-outline-secondary btn-block'])}}
+
                     {{ Form::close() }}
-                </div>
+
 
 
             </div>

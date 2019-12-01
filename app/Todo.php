@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
-   protected $fillable = ['description', 'done', 'userId'] ;
+   protected $fillable = ['name', 'description', 'done', 'userId'] ;
    public $timestamps = false;
 }
