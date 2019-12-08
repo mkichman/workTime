@@ -19,6 +19,7 @@ class CreateSchedulesTable extends Migration
             $table->integer('userId');
             $table->string('name');
             $table->text('description')->nullable();
+            $table->tinyInteger('done')->nullable(false);
             $table->date('startDate');
             $table->date('endDate');
             $table->timestamps();

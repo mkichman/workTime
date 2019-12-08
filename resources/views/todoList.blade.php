@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="card col-md-10">
+        <div class="card col-md-12">
 
             <div class="card-body text-center list-group">
 
@@ -11,10 +11,10 @@
 
                     {{--                            @foreach($key as $elem => $each)--}}
                     {{--                            <a href="{{route('done', ['id' => $key['id']])}}" class="task task{{$key['id']}}"> {{$key['description']}} </a>--}}
-                    <a href="#" class="task task{{$key['id']}} list-group-item
-                                    @if($key['done'] === 1) done @endif
-                            " data-id="{{$key['id']}}"> {{$key['description']}}
-                        <button type="button" class="close" aria-label="Close" data-id="{{$key['id']}}">
+                    <a href="#" class="task task{{$key->id}} list-group-item
+                                    @if($key->done === 1) done @endif
+                            " data-id="{{$key->id}}"> {{$key->description}}
+                        <button type="button" class="close" aria-label="Close" data-id="{{$key->id}}">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </a><br/>
@@ -27,7 +27,8 @@
                     <div class="input-group">
                     {{Form::text('name', '', ['class' => 'form-control col-md-2', 'placeholder' => 'Short name'])}}
 
-                    {{ Form::text('description','', ['class' => 'form-control col-md-10', 'id' => 'taskName', 'placeholder' => 'Description']) }}
+                    {{ Form::text('description','', ['class' => 'form-control col-md-8', 'id' => 'taskName', 'placeholder' => 'Description']) }}
+                    {{Form::date('deadline', '' , ['class' => 'form-control col-md-2'])}}
                     </div>
                     <br/>
                     {{Form::submit('Add', ['class' => 'btn btn-outline-secondary btn-block'])}}
@@ -57,6 +58,7 @@
             data: {id: id},
             success:
                 () => {
+                console.log('done');
                     // $(this).addClass('done');
                 }
         });
@@ -82,7 +84,7 @@
 
     function checkClass(element)
     {
-        // console.log(element.indexOf("done"));
+
 
         if(element.indexOf("done") < 0)
         {

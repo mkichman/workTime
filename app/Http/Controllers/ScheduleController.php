@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Helpers\CalendarHelper;
+use App\Relation;
 use App\Schedule;
+use App\Todo;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -31,8 +33,16 @@ class ScheduleController extends Controller
                     ->get()
                     ->toArray();
 
-//        $timers = $timers->toArray();
+//        $todo = DB::table('todos')
+//                    ->where('userId', '=', $user->id)
+//                    ->whereNotNull('deadline')
+//                    ->select(['name', 'description', 'deadline as startDate', 'deadline as endDate', 'id'])
+//                    ->get()
+//                    ->toArray();
+
         $schedule = array_merge($timers, $schedule);
+
+//        $schedule = array_merge($todo, $schedule);
 
 //        dd($schedule);
 
@@ -61,14 +71,33 @@ class ScheduleController extends Controller
         //TODO validate request if end date is not earlier than start date
         $user = Auth::user();
 
-        $scheduleTable = DB::table('schedules');
+        $schedule = new Schedule();
 
-        $scheduleTable->insert([
-            'userId'        => $user->id,
-            'name'          => $request->name,
-            'description'   => $request->description,
-            'startDate'     => $request->startDate,
-            'endDate'       => $request->endDate
+        $schedule->userId       = $user->id;
+        $schedule->name         = $request->name;
+        $schedule->description  = $request->description;
+        $schedule->startDate    = $request->startDate;
+        $schedule->endDate      = $request->endDate;
+        $schedule->done         = false;
+
+        $schedule->save();
+
+        $todo = new Todo();
+
+        $todo->userId       = $user->id;
+        $todo->name         = $request->name;
+        $todo->description  = $request->description;
+        $todo->deadline    = $request->endDate;
+        $todo->done         = false;
+
+        $todo->save();
+
+        $relationTable = DB::table('relations');
+
+        $relationTable->insert([
+            'scheduleId'    => $schedule->id,
+            'todoId'        => $todo->id,
+            'userId'        => $user->id
         ]);
 
         return redirect()->route('calendar');
@@ -109,6 +138,8 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $user = Auth::user();
+
         $task = Schedule::findOrfail($id);
 
         $task->name = $request->name;
@@ -118,6 +149,21 @@ class ScheduleController extends Controller
 
         $task->save();
 
+        $relation = DB::table('relations')
+            ->where('scheduleId', '=', $id)
+            ->where('userId', '=', $user->id)
+            ->first();
+
+        if(isset($relation))
+        {
+            $todo = Todo::findOrfail($relation->todoId);
+            $todo->name = $request->name;
+            $todo->description = $request->description;
+            $todo->deadline = $request->endDate;
+            $todo->userId = $user->id;
+
+            $todo->save();
+        }
         return redirect()->route('calendar');
     }
 
@@ -129,9 +175,26 @@ class ScheduleController extends Controller
      */
     public function destroy($id)
     {
+        $user = Auth::user();
+
         $task = Schedule::findOrfail($id);
 
         $task->delete();
+
+        $relation = DB::table('relations')
+            ->where('scheduleId', '=', $id)
+            ->where('userId', '=', $user->id)
+            ->first();
+
+        if(isset($relation))
+        {
+            $rel = DB::table('relations')
+                ->where('relId', '=',  $relation->relId)
+                ->delete();
+
+            $todo = Todo::findOrfail($relation->todoId);
+            $todo->delete();
+        }
         return redirect()->route('calendar');
     }
 

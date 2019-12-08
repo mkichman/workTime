@@ -19,10 +19,20 @@ $(document).ready(function() {
                         start : '{{ $task->startDate }}',
                         end : '{{ $task->endDate }}',
                         businessHours : true,
-                        url : '{{ isset($task->name) ? route('schedule.edit', $task->id) : url('/editUnavailable') }}'
+                        url : '{{ isset($task->name) ? route('schedule.edit', $task->id) : url('/editUnavailable') }}',
+
+                        backgroundColor : '{{ isset($task->done) && $task->done === 1 ? "#ccff99" : "#ffe6cc"}}',
+                        textColor : '{{ isset($task->workTime) ? 'red' : 'black'}}',
+                        borderColor: 'white'
+
                     },
                     @endforeach
-                ]
+                ],
+                firstDay: 1,
+                borderColor: 'white',
+                textColor: 'black'
+
+
             })
 
 

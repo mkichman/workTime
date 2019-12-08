@@ -75,12 +75,15 @@ class TimerController extends Controller
 
         $workTime = $start->diff($end);
 
+
+//        dd($workTime);
+
         $tableTimers
             ->where('userId', '=', $user->id)
             ->update([
             'endTime' => date('H:i:s'),
             'endDate' => date('Y/m/d'),
-            'workTime' => $workTime->i
+            'workTime' => $workTime->h . ':' . $workTime->i
         ]);
 
 //        $timer->endTime = date('H:i:s');

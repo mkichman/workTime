@@ -22,7 +22,7 @@ class CreateTimerTable1 extends Migration
             $table->date('startDate');
             $table->date('endDate');
             $table->integer('break');
-            $table->integer('workTime')->nullable(false);
+            $table->text('workTime')->nullable(false);
         });
     }
 
