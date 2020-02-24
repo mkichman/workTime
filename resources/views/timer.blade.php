@@ -238,6 +238,7 @@
                 url: 'timer/stop'
             });
             $(".stopConfirm").hide();
+            window.location.reload();
         });
     }
 

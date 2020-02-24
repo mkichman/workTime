@@ -33,20 +33,8 @@ class ScheduleController extends Controller
                     ->get()
                     ->toArray();
 
-//        $todo = DB::table('todos')
-//                    ->where('userId', '=', $user->id)
-//                    ->whereNotNull('deadline')
-//                    ->select(['name', 'description', 'deadline as startDate', 'deadline as endDate', 'id'])
-//                    ->get()
-//                    ->toArray();
-
         $schedule = array_merge($timers, $schedule);
 
-//        $schedule = array_merge($todo, $schedule);
-
-//        dd($schedule);
-
-//        $schedule = Schedule::all();
         return view('schedule.index', compact('schedule'));
     }
 
@@ -122,7 +110,6 @@ class ScheduleController extends Controller
      */
     public function edit($id)
     {
-        //$schedule = new Schedule();
 
         $task = Schedule::where('id', '=', $id)->firstOrFail();
 
@@ -201,6 +188,6 @@ class ScheduleController extends Controller
     public function editUnavailable()
     {
         //todo
-        die('this is view which says edit is unavailable for this event');
+        die('Editing this event is unavailable.');
     }
 }

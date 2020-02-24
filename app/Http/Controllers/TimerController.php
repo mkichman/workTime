@@ -22,8 +22,6 @@ class TimerController extends Controller
     public function previousLogs()
     {
         $timer = Timer::select('startTime', 'endTime', 'startDate', 'endDate')->get();
-//        $data = json_decode($timer, TRUE);
-
 
         return view('userProfile')->with($timer);
     }
@@ -55,8 +53,6 @@ class TimerController extends Controller
         date_default_timezone_set('Europe/Warsaw');
         $user = Auth::user();
 
-//        $timer = Timer::where('endDate', NULL)->first();
-
         $tableTimers = DB::table('timers');
 
         $timer = $tableTimers
@@ -66,7 +62,7 @@ class TimerController extends Controller
 
         if($timer === NULL)
         {
-            die('start the timer first');
+            die('You should start timer first');
             //TODO stopping timer when no timer is started
         }
 
@@ -75,9 +71,6 @@ class TimerController extends Controller
 
         $workTime = $start->diff($end);
 
-
-//        dd($workTime);
-
         $tableTimers
             ->where('userId', '=', $user->id)
             ->update([
@@ -85,11 +78,6 @@ class TimerController extends Controller
             'endDate' => date('Y/m/d'),
             'workTime' => $workTime->h . ':' . $workTime->i
         ]);
-
-//        $timer->endTime = date('H:i:s');
-//        $timer->endDate = date('Y/m/d');
-//
-//        $timer->save();
 
         return view('timer');
     }
@@ -103,13 +91,9 @@ class TimerController extends Controller
             ->whereNull('endDate')
             ->first();
 
-//        $timer = Timer::where('endDate', NULL)->first();
-
         if($timer !== NULL)
         {
-            //echo 'stop the timer first';
             return false;
-            // TODO
         }
        return true;
     }

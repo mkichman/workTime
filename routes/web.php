@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->middleware('auth');
 //Route::get('/timer', 'TimerController@index')->middleware('auth');
 
-Route::get('/timer', 'TimerController@index')->middleware('check_user_role:' . \App\Role\UserRole::ROLE_ADMIN);
+Route::get('/timer', 'TimerController@index')->middleware('auth');
 
 
 Route::resource('schedule', 'ScheduleController')->middleware('auth');
@@ -52,6 +52,8 @@ Route::post('todo/add', 'TodoListController@create')->name('todoAdd')->middlewar
 //Route::get('todo/done', 'TodoListController@markAsDone')->name('done')->middleware('auth');
 Route::post('todo/done', 'TodoListController@markAsDone')->name('setDone')->middleware('auth');
 Route::post('todo/delete', 'TodoListController@delete')->middleware('auth');
+//Route::get('export', 'UserController@exportData')->middleware('auth')->name('export');
+Route::post('export', 'UserController@exportData')->middleware('auth')->name('export');
 
 
 

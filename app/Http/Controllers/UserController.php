@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Timer;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class UserController extends Controller
 {
@@ -25,4 +27,13 @@ class UserController extends Controller
 
         return view('userProfile', compact('data'));
     }
+
+    public function exportData(Request $request)
+    {
+        $export = new UserExport();
+        $export->setDate($request->all());
+
+        return Excel::download(   $export, 'users.xlsx');
+    }
+
 }

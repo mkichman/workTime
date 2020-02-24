@@ -18,18 +18,10 @@ class TodoListController extends Controller
     {
         $user  = Auth::user();
 
-        $data = DB::table('todos')
-                ->where('userId', '=', $user->id)
-                ->get()
-                ->toArray();
+        $today = Carbon::now();
+        $parsedToday = $today->year . '-' . $today->month . '-' . $today->day;
 
-//        $data = Todo::all();
-//
-//        $data = json_decode($data, TRUE);
-
-
-
-//        dd($data);
+        $data =  DB::select (DB::raw('Select * from todos where userid =' . $user->id .' and deadline is null or deadline = "' . $parsedToday. '"' ));
 
         return view('todoList', compact('data'));
     }
@@ -38,13 +30,12 @@ class TodoListController extends Controller
     {
         $data = $request->all();
 
-//        dd($data);
         $data['userId'] = Auth::id();
         $data['done'] = 0;
 
         if(strlen($data['description']) > 120)
         {
-            die('too long');
+            die('Given description is too long');
             // todo komunikat za długi opis zadania
         }
 

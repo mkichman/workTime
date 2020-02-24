@@ -30,7 +30,8 @@ $(document).ready(function() {
                 ],
                 firstDay: 1,
                 borderColor: 'white',
-                textColor: 'black'
+                textColor: 'black',
+                eventLimit: 4
 
 
             })

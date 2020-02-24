@@ -46,28 +46,8 @@
 </head>
 <body>
 <script>
-    console.log('ddddddd');
 
     $(document).ready(function() {
-        // page is now ready, initialize the calendar...
-                {{--$('#calendar').fullCalendar({--}}
-                {{--    // put your options and callbacks here--}}
-                {{--    events : [--}}
-                {{--            @foreach($schedule as $task)--}}
-                {{--        {--}}
-                {{--            title : '{{ $task->name }}',--}}
-                {{--            start : '{{ $task->startDate }}',--}}
-                {{--            end : '{{ $task->endDate }}',--}}
-                {{--            businessHours : true,--}}
-                {{--            url : '{{ route('schedule.edit', $task->id) }}'--}}
-                {{--        },--}}
-                {{--        @endforeach--}}
-                {{--    ]--}}
-                {{--})--}}
-
-
-
-
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
